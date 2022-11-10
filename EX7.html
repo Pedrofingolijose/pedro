@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var nomeProduto, custoFabrica, taxasImposto, taxasDistribuidor, valorFinal; 
+
+nomeProduto = prompt('Insira o nome do produto :');
+
+custoFabrica = prompt('Insira seu custo de fábrica: ');
+custoFabrica = eval (custoFabrica);
+taxasImposto = prompt ('Insira o valor das taxas cobradas sobre impostos: ');
+taxasImposto = eval (taxasImposto);
+taxasDistribuidor = prompt ('Insira o valor da taxa cobrados pelo distribuidor: ');
+taxasDistribuidor = eval (taxasDistribuidor);
+
+valorFinal = (custoFabrica + taxasImposto + taxasDistribuidor);
+
+window.document.write('O nome do produto é: ' + nomeProduto);
+window.document.write('O preço final ao consumidor é: ' + valorFinal);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

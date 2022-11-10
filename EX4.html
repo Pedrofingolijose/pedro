@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var nomeCorrentista, nomeBanco, numeroConta, aDebitar, aCreditar, limiteCredito, saldoAtual, saldoDisponivel;
+nomeCorrentista = prompt('Insira o nome do correntista: ');
+nomeBanco = prompt('Insira o nome do banco: ');
+numeroConta = prompt('insira o número da conta: ');
+
+
+aDebitar = prompt('Insira o valor total de cheques à debitar em sua conta: ');
+aDebitar = eval (aDebitar);
+aCreditar  = prompt('Insira o valor total de cheques e dinheiro à creditar em sua conta: ');
+aCreditar = eval (aCreditar);
+limiteCredito = prompt('Insira o limite de crédito de sua conta: ');
+limiteCredito = eval (limiteCredito);
+saldoAtual = prompt('insira seu saldo atual');
+saldoAtual = eval (saldoAtual);
+
+saldoDisponivel = (saldoAtual + aCreditar + limiteCredito) - aDebitar;
+
+window.document.write('Nome correntista: ' + nomeCorrentista);
+window.document.write('Banco : ' + nomeBanco);
+window.document.write('Número da conta: ' + numeroConta);
+window.document.write('O saldo dispoível é : ' + saldoDisponivel);
+
+    </script>
+</body>
+</html>
